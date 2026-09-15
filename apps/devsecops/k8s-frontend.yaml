@@ -20,7 +20,7 @@ spec:
 
       containers:
         - name: frontend
-          image: 634848780582.dkr.ecr.ap-south-1.amazonaws.com/devsecops/frontend:test
+          image: 634848780582.dkr.ecr.ap-south-1.amazonaws.com/devsecops/frontend:6da3be279437
           imagePullPolicy: Always
           workingDir: /frontendapp
           command: ["python"]

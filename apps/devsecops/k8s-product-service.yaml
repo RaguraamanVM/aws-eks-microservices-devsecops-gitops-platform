@@ -19,7 +19,7 @@ spec:
         workload: platform
       containers:
         - name: product-service
-          image: 634848780582.dkr.ecr.ap-south-1.amazonaws.com/devsecops/product-service:test
+          image: 634848780582.dkr.ecr.ap-south-1.amazonaws.com/devsecops/product-service:6da3be279437
           imagePullPolicy: Always
           workingDir: /productapp
           command: ["python"]
