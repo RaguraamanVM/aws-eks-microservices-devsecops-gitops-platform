@@ -37,16 +37,14 @@ spec:
               cpu: 300m
               memory: 256Mi
           readinessProbe:
-            httpGet:
-              path: /api/user
+            tcpSocket:
               port: 5001
             initialDelaySeconds: 10
             periodSeconds: 10
             timeoutSeconds: 3
             failureThreshold: 6
           livenessProbe:
-            httpGet:
-              path: /api/user
+            tcpSocket:
               port: 5001
             initialDelaySeconds: 30
             periodSeconds: 20
